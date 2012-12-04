@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["paxton@greenllama.com"]
   gem.description   = %q{Guard gem for running Roxy Unit Tests. Roxy is a Framework for writing xquery application in MarkLogic.}
   gem.summary       = %q{Guard gem for running Roxy Unit Tests}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/paxtonhare/guard-roxy"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

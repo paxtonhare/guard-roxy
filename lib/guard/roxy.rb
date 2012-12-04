@@ -1,6 +1,7 @@
 require 'guard'
 require 'guard/guard'
 require 'guard/watcher'
+require 'rexml/document'
 
 module Guard
   class Roxy < Guard
@@ -18,6 +19,7 @@ module Guard
 
     # Print the result of the command(s), if there are results to be printed.
     def run_on_change(paths)
+      puts paths
       deploy_code
       paths.each do |path|
         run_test(path) if File.exists?("src/#{path}")
